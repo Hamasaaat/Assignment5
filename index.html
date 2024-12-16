@@ -1,20 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Assignment2- Web Project</title>
-    <link rel="stylesheet" href="style.css">
+    <h1>Rania | Software Engineer</h1>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        /* Body and overall page styling */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+       
+        /* Dividing line between main content and footer */
+        .divider {
+          border-top: 2px solid #333; /* Creates a dividing line */
+          margin: 0;
+        }
+    
+        /* Footer styling */
+        footer {
+          background-color: #333;
+          color: white;
+          text-align: center;
+          padding: 10px;
+        }
+      </style>
 </head>
+
 <body>
     <header>
-        <h1>Good morning, sunshine~</h1>
+        <section role="banner">
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blogposts.html">Blog posts</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <ul>
+         </nav>
+        </section>
     </header>
 
     <main>
-
+        <section>
+        <table>
+            <tr>
+              <td>
+                <img width="300" height="400" 
+                alt="censored picture of Rania"
+                src="./icons/DP.JPG"
+                loading="lazy">
+            </td> 
+              <td>
+                <h2>Rania Ahmed</h2>
+                <p>An Emirati seasoned senior software engineer<br>
+                   with experience of over a decade in security<br>
+                   sensitve systems desktop apps such as Command<br> 
+                   and Control systems and C4ISR. Worked in UAE, <br>
+                   Spain and Germany</p>
+              </td>
+            </tr>
+          </table>
+        </section>
+               <!--till we learn css/styling-->
+        <br><br><br><br><br><br><br><br><br><br><br><br>
     </main>
 
+    <div class="divider"></div>
     <footer>
-        <p><a href="contactUs.html">Contact Us</a></p>
+        <div class="social-media-links">
+            <a href="https://twitter.com/Hamasaaat" target="_blank" class="social-icon">
+                <img src="icons/ic-twitter.svg" alt="Twitter" width="40">
+            </a>
+            <a href="https://www.instagram.com/Hamasaaat" target="_blank" class="social-icon">
+                <img src="icons/ic-instagram.svg" alt="Instagram" width="40">
+            </a>
+            <a href="https://www.linkedin.com/in/rania-ahmed-8a0546243/" target="_blank" class="social-icon">
+                <img src="icons/ic-linked-in.svg" alt="LinkedIn" width="40">
+            </a>
+        </div>
     </footer>
 
 </body>
