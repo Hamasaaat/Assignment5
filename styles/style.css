@@ -1,42 +1,82 @@
 /* Ensure the header and nav are styled properly */
 header {
-    width: 100%;
-    position: fixed; /* Keep the header at the top */
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #333; /* Background color for the header */
-    padding: 10px 20px; /* Add padding for the header */
-    position: relative;  /* or fixed, depending on your layout */
-    z-index: 10; /* Ensure header has a lower z-index than the text */
-  }
-  
-  h1 {
-    position: relative;
-    z-index: 5; /* Lower z-index if you want text to appear over the header */
-  }
+  width: 100%;
+  position: fixed;
+  /* Keep the header at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  /* Background color for the header */
+  padding: 10px 20px;
+  /* Add padding for the header */
+  position: relative;
+  /* or fixed, depending on your layout */
+  z-index: 10;
+  /* Ensure header has a lower z-index than the text */
+}
+
+/* Body and overall page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Dividing line between main content and footer */
+.divider {
+  border-top: 2px solid #333;
+  /* Creates a dividing line */
+  margin: 0;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+h1 {
+  position: relative;
+  z-index: 5;
+  /* Lower z-index if you want text to appear over the header */
+}
 
 
 nav ul {
-    list-style: none; /* Remove default list styling */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Use flexbox to arrange items in a row */
-    justify-content: flex-end; /* Align items to the right */
+  list-style: none;
+  /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* Use flexbox to arrange items in a row */
+  justify-content: flex-end;
+  /* Align items to the right */
 }
 
 nav ul li {
-    margin-left: 20px; /* Add space between the items */
+  margin-left: 20px;
+  /* Add space between the items */
 }
 
 nav ul li a {
-    color: white; /* Text color for the links */
-    text-decoration: none; /* Remove underline from links */
-    font-size: 16px; /* Adjust font size */
+  color: white;
+  /* Text color for the links */
+  text-decoration: none;
+  /* Remove underline from links */
+  font-size: 16px;
+  /* Adjust font size */
 }
 
 /* Optional: Add hover effect */
 nav ul li a:hover {
-    color: #ff9900; /* Change color when hovering */
+  color: #ff9900;
+  /* Change color when hovering */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
