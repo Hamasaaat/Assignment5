@@ -1,3 +1,40 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: lightgrey;
+  margin: 0;
+  padding: 10px;
+  padding-top: 70px;  /* Accounts for fixed header */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+footer img {
+  width: 40px !important;
+  height: auto;
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -6,87 +43,65 @@ header {
   right: 0;
   background-color: #333;
   padding: 10px 20px;
-  position: relative;
   z-index: 10;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  background-color: lightgrey;
-  margin: 0;
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
   padding: 10px;
 }
 
-.divider {
-  border-top: 2px solid #333;
-  margin: 0;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-h1 {
-  position: relative;
-  z-index: 5;
-}
-
-nav ul {
+.nav-menu ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: flex-end;
 }
 
-nav ul li {
+.nav-menu ul li {
   margin-left: 20px;
 }
 
-nav ul li a {
+.nav-menu ul li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  padding: 10px 20px;
 }
 
-nav ul li a:hover {
+.nav-menu a:hover {
   color: #ff9900;
 }
 
-html {
-  scroll-behavior: smooth;
+.nav-menu a:focus {
+  outline: 2px solid #ff9900;
 }
 
-
 body.blogPage h1 {
-  font-size: 15px;
-  color: purple;
-  text-align: center;
-
-  margin-top: 20px;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  margin-top: 15px;
   margin-bottom: 15px;
   padding: 10px;
 }
 
-body.blogPage h2{
+body.blogPage h2 {
   font-size: 14px;
   margin-top: 20px;
   margin-bottom: 15px;
   padding: 10px;
 }
 
-
-body.blogPage p,time, ol li{
+body.blogPage p,
+time,
+ol li {
   font-size: 13px;
   margin-bottom: 20px;
   padding: 8px;
   line-height: 1.4;
 }
-
 
 body.blogPage img {
   width: 100%;
@@ -94,14 +109,88 @@ body.blogPage img {
   height: auto;
 }
 
-
-footer img {
-  width: 40px !important;
-  height: auto;
+/* Blog container layout */
+.blog-container {
+  display: flex;
+  gap: 0px;
+  min-height: 80vh;
+  overflow: auto;
 }
 
-body.blogPage section {
-  border: 2px solid #333; 
-  margin: 20px 0;
-  padding: 15px; 
+.blog-list {
+  flex: 1;
+  flex-basis: 20%;
+  margin-top: 50px; 
+  padding-left: 10px;
+}
+
+.blog-list li {
+  margin-bottom: 10px;
+}
+
+.blog-list a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.blog-list a:hover {
+  color: #0056b3;
+}
+
+.post-detail {
+  flex: 2;
+  flex-basis: 80%;
+}
+
+.post-detail .post {
+  display: none;
+}
+
+.post-detail .post:target {
+  display: block;
+}
+
+/* Responsive Adjustments for Smaller Screens (Mobile & Tablet) */
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;  /* Increase padding-top for fixed header on smaller screens */
+  }
+
+  .blog-container {
+    flex-direction: column;  /* Stack blog list and post detail vertically */
+    gap: 10px;  /* Reduced gap for better spacing */
+  }
+
+  .blog-list {
+    flex: 1 0 100%; /* Take full width on smaller screens */
+    margin-top: 0;
+    padding-left: 0;  /* Adjust padding */
+  }
+
+  .post-detail {
+    flex: 1 0 100%;  /* Take full width on smaller screens */
+  }
+
+  /* Adjust font sizes for smaller screens */
+  body {
+    font-size: 14px;  /* Slightly smaller text for readability */
+  }
+
+  .nav-menu ul li a {
+    font-size: 14px;  /* Smaller nav text on mobile */
+    padding: 8px 16px;  /* Reduced padding */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Additional tweaks for very small screens (e.g., mobile phones) */
+  body {
+    padding: 5px;
+  }
+
+  .nav-menu ul li a {
+    font-size: 12px;  /* Even smaller text */
+    padding: 6px 12px;  /* Smaller padding */
+  }
 }
