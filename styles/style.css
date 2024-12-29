@@ -231,6 +231,12 @@ footer .social-media-links a {
   footer .social-media-links {
     gap: 15px;
   }
+
+  body.blogPage header,
+  body.home-page header,
+  body.project-page header {
+    display: block !important; 
+  }
 }
 
 @media (max-width: 480px) {
