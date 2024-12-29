@@ -181,8 +181,8 @@ body.blogPage img {
 
 footer .social-media-links {
   display: flex;
-  justify-content: center;
   gap: 20px;
+  justify-content: space-evenly;
 }
 
 footer .social-media-links a {
@@ -226,6 +226,10 @@ footer .social-media-links a {
   footer img {
     width: 30px;
     margin: 5px;
+  }
+
+  footer .social-media-links {
+    gap: 15px;
   }
 }
 
