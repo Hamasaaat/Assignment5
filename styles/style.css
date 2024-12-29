@@ -75,9 +75,8 @@ header {
 }
 
 .nav-menu a:focus {
-  outline:none;
+  outline: none;
 }
-
 
 body.blogPage h1 {
   font-size: 16px;
@@ -112,7 +111,7 @@ body.blogPage img {
 
 .blog-container {
   display: flex;
-  gap: 0px;
+  gap: 20px;
   min-height: 80vh;
   overflow: auto;
 }
