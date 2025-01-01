@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Blogs</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="blogPage">
     <header>
-        <nav>
+        <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -18,102 +18,79 @@
             </ul>
         </nav>
     </header>
-    <article><!--I put article here so it does not get boxed/borders-->
-        <p>As a softrware engineer, I had the honor of participating/attending the following events:</p>
-        <ul>
-            <li><a href="#bp1">Women In Tech Summit</a></li>
-            <li><a href="#bp2">GITEX 2024</a></li>
-            <li><a href="#bp3">Open Source AI Summit 2023</a></li>
-            <li><a href="#bp4">Cybersecurity & Ethics</a></li>
-        </ul>
-    </article>
-    <section id="bp1">
-        <h1>Women In Tech Summit</h1>
-        <address>
-            <p>by Rania A.</p>
-        </address>
-        <time>20th February 2013</time>
-        <p>Women in Tech® Global, the world’s leading organization supporting women in STEAM (Science, Technology,
-            Engineering, Arts, and Mathematics).
-            The most empowering, energetic, inspiring, and boldest event in Europe and Asia for women in STEM, Tech & IT
-            took place in Poland!
-            The Women in Tech Summit 2023 was held in Warsaw, Poland, once again. The event continued its tradition of
-            gathering women from the technology
-            sector to discuss topics like leadership, innovation, and diversity in tech. It featured various speakers
-            and workshops aimed at empowering women
-            and fostering a more inclusive tech industry. The event has become an important gathering in the global tech
-            community for supporting women in STEM fields.</p>
 
-        <img src="./icons/women_summit.jpg"
-            alt="A picture of the panel of the talk show in the women in tech summit 2013"></img>
-        <p>For more information, click <a href="https://womenintech-summit.com" target="_blank">here</a>.</p>
+    <div class="blog-container">
+        <div class="blog-list">
+            <ul>
+                <li><a href="#bp1">Women In Tech Summit</a></li>
+                <li><a href="#bp2">GITEX 2018</a></li>
+                <li><a href="#bp3">Open Source AI Summit 2023</a></li>
+                <li><a href="#bp4">Cybersecurity & Ethics</a></li>
+            </ul>
+        </div>
 
-    </section>
+        <div class="post-detail">
+            <section id="bp1" class="post">
+                <h1>Women In Tech Summit</h1>
+                <address>
+                    <p>by Rania A.</p>
+                </address>
+                <time>20th February 2013</time>
+                <p>Women in Tech® Global, the world’s leading organization supporting women in STEAM (Science, Technology, Engineering, Arts, and Mathematics). The most empowering, energetic, inspiring, and boldest event in Europe and Asia for women in STEM, Tech & IT took place in Poland!</p>
+                <img src="./icons/women_summit.jpg" alt="A picture of the panel of the talk show in the women in tech summit 2013" />
+                <p>For more information, click <a href="https://womenintech-summit.com" target="_blank">here</a>.</p>
+            </section>
 
-    <section id="bp2">
-        <h1>GITEX 2018</h1>
-        <address>
-            <p>by Rania A.</p>
-        </address>
-        <time>15th October 2018</time>
-        <p>The major tech event in Dubai. An extraordinary exhibition dedicated to technology.
-            GITEX (Gulf Information Technology Exhibition) is one of the largest and most influential technology
-            exhibitions in the Middle East,
-            held annually in Dubai, United Arab Emirates. It serves as a platform for global tech companies to showcase
-            their latest innovations,
-            products, and services. The event attracts a diverse audience, including tech professionals, businesses,
-            government officials,
-            and tech enthusiasts from around the world.</pp>
+            <section id="bp2" class="post">
+                <h1>GITEX 2018</h1>
+                <address>
+                    <p>by Rania A.</p>
+                </address>
+                <time>15th October 2018</time>
+                <p>The major tech event in Dubai. An extraordinary exhibition dedicated to technology. GITEX (Gulf Information Technology Exhibition) is one of the largest and most influential technology exhibitions in the Middle East, held annually in Dubai, United Arab Emirates.</p>
 
-        <h2>Key Features of GITEX Dubai:</h2>
-        <ol>
-            <li><b>Technology Showcase:</b> 
-                The event features the latest advancements in areas like AI,
-                cybersecurity, cloud computing, blockp>Major technology companies, startups, and innovators display
-                their cutting-edge products and solutions.</li>
-            <li><b>Networking & Partnerships:</b> 
-                It provides opportunities for businesses to connect, collaborate,
-                and form partnerships, while also offering a space for discussions and workshops.</li>
-            <li><b>Conferences & Workshops:</b>
-                GITEX hosts numerous expert-led sessions, seminars, and keynote
-                speeches focused on the future of technology and digital transformation</li>
-        </ol>
+                <h2>Key Features of GITEX Dubai:</h2>
+                <ol>
+                    <li><b>Technology Showcase:</b> Major technology companies, startups, and innovators display their cutting-edge products and solutions.</li>
+                    <li><b>Networking & Partnerships:</b> It provides opportunities for businesses to connect, collaborate, and form partnerships.</li>
+                    <li><b>Conferences & Workshops:</b> GITEX hosts numerous expert-led sessions, seminars, and keynote speeches focused on the future of technology.</li>
+                </ol>
+                <img src="./icons/gitex.jpg" alt="A picture of the GITEX 2018 ad" />
+                <p>For more information, click <a href="https://shorturl.at/MbJZA" target="_blank">here</a>.</p>
+            </section>
 
-        <img src="./icons/gitex.jpg" alt="A picture of the GITEX 2018 ad"></img>
-        <p>For more information, click <a href="https://shorturl.at/MbJZA" target="_blank">here</a>.</p>
-    </section>
+                <section id="bp3" class="post">
+                    <h1>Open Source AI Summit 2024</h1>
+                    <address>
+                        <p>by Rania A.</p>
+                    </address>
+                    <time>26th November 2024</time>
+                    <p>The Open-Source AI Summit Abu Dhabi, hosted by the Technology Innovative Institute (TII), a
+                        global applied science research center,
+                        has kicked off with critical conversations that will shape the global AI agenda. The summit,
+                        taking place at the St. Regis
+                        Saadiyat Island with 300+ in attendance, converges with growing international focus on the pull
+                        and push between open and closed-source AI.</p>
 
-    <section id="bp3">
-        <h1>Open Source AI Summit 2024</h1>
-        <address>
-            <p>by Rania A.</p>
-        </address>
-        <time>26th November 2024</time>
-        <p>The Open-Source AI Summit Abu Dhabi, hosted by the Technology Innovative Institute (TII), a global applied
-            science research center,
-            has kicked off with critical conversations that will shape the global AI agenda. The summit, taking place at
-            the St. Regis
-            Saadiyat Island with 300+ in attendance, converges with growing international focus on the pull and push
-            between open and closed-source AI.</p>
+                    <img src="./icons/AI_Summit.jpg" alt="A picture of the TII CEO Dr. Najwa speaking in the AI summit" />
+                    <p>For more information, read <a href="https://shorturl.at/cq0kP" target="_blank">here</a>.</p>
+                </section>
 
-        <img src="./icons/AI_Summit.jpg" alt="A picture of the TII CEO Dr. Najwa speaking in the AI summit"></img>
-        <p>For more information, read <a href="https://shorturl.at/cq0kP" target="_blank">here</a>.</p>
-    </section>
+                <section id="bp4" class="post">
+                    <h1>Cybersecurity & Ethics</h1>
+                    <address>
+                        <p>by Rania A.</p>
+                    </address>
+                    <time>5th December 2024</time>
+                    <p> Explore the challenges of our digital age with top experts James Lewis and Mayra Ruiz-McPherson,
+                        moderated by NYUAD's Muhammet Bas. From global cyber threats to ethical dilemmas, this is a
+                        discussion you won’t want to miss. </p>
 
-    <section id="bp4">
-        <h1>Cybersecurity & Ethics</h1>
-        <address>
-            <p>by Rania A.</p>
-        </address>
-        <time>5th December 2024</time>
-        <p> Explore the challenges of our digital age with top experts James Lewis and Mayra Ruiz-McPherson,
-            moderated by NYUAD's Muhammet Bas. From global cyber threats to ethical dilemmas, this is a discussion
-            you won’t want to miss. </p>
-
-        <img src="./icons/cybersecurity.jpg" alt="A picture that gives the vibe of cybersecurity"></img>
-        <p>For more information, read <a href="https://shorturl.at/O9Ep6" target="_blank">here</a>.</p>
-    </section>
-
+                    <img src="./icons/cybersecurity.jpg" alt="A picture that gives the vibe of cybersecurity"></img>
+                    <p>For more information, read <a href="https://shorturl.at/O9Ep6" target="_blank">here</a>.</p>
+                </section>
+        </div>
+    </div>
 
     <footer>
         <div class="social-media-links">
